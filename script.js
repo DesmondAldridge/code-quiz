@@ -1,34 +1,49 @@
 
-//TIMER
-var time = document.getElementById("time");
-// var mainEl = document.getElementById("main");
+var counterE1 = document.getElementById("counter");
 
-var secondsLeft = 60;
+var secondsLeft = 10;
 
-function setTime() {
+function countdown() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
-    time.textContent = secondsLeft;
+    counterE1.textContent = secondsLeft;
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
-    //   exit();
+      alert('done');
     }
 
-  }, 6000);
+  }, 1000);
 }
 
-// function exit() {
+countdown();
 
-//     window.location.href="exit.html";
+// var countdown = document.getElementById("countdown");
+// var main = document.getElementById("main");
 
-//   timeEl.textContent = " ";
+// var secondsLeft = 10;
+
+// function setTime() {
+//   var timerInterval = setInterval(function() {
+//     secondsLeft--;
+//     countdown.textContent = secondsLeft + " seconds left till colorsplosion.";
+
+//     if(secondsLeft === 0) {
+//       clearInterval(timerInterval);
+//       sendMessage();
+//     }
+
+//   }, 1000);
+// }
+
+// function sendMessage() {
+//   countdown.textContent = " ";
 
 //   var imgEl = document.createElement("img");
 
 //   imgEl.setAttribute("src", "images/image_1.jpg");
-//   mainEl.appendChild(imgEl);
+//   main.appendChild(imgEl);
 
-}
+// }
 
-setTime();
+// setTime();
