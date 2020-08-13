@@ -54,11 +54,11 @@ function toEndPage() {
 
 function contQuiz3 () {
   //Second question...
-  questions.textcontent = "____?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
+  questions.textcontent = "What was the focus of this assignment?";
+  firstChoice.textcontent = "a.) No singular focus, this assignment stands as a general assessment test";
+  secondChoice.textcontent = "b.) jQuery and web APIs";
+  thirdChoice.textcontent = "c.) JavaScript and jQuery";
+  fourthChoice.textcontent = "d.) JavaScript and web APIs";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
@@ -68,11 +68,11 @@ function contQuiz3 () {
 
 function contQuiz2 () {
   //Second question...
-  questions.textcontent = "How is ___?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
+  questions.textcontent = "What's the difference between localStorage and sessionStorage?";
+  firstChoice.textcontent = "a.) Where you generally store you laptop vs where you use it for coding sessions, doesn't apply to desktop computers";
+  secondChoice.textcontent = "b.) The former regards variables stores inside of a function, where as the latter regards being stored globally";
+  thirdChoice.textcontent = "c.) The former regards variable declaration, where as the latter regards variable initializing a variable";
+  fourthChoice.textcontent = "d.) Data in the former does not expire, where as data the latter will expire when the page session ends";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
@@ -82,11 +82,11 @@ function contQuiz2 () {
 
 function contQuiz () {
   //Second question...
-  questions.textcontent = "Which ___ are ___?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
+  questions.textcontent = "What are two ways to add JS to your site?";
+  firstChoice.textcontent = "a.) Type it with your fingers or toes";
+  secondChoice.textcontent = "b.) Internally or externally";
+  thirdChoice.textcontent = "c.) 50:50 or phone a friend";
+  fourthChoice.textcontent = "d.) Download JS code, free or premium options";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Correct!'), addPt(), contQuiz2()});
@@ -96,11 +96,11 @@ function contQuiz () {
 
 function beginQuiz() {
   //First question...
-  questions.textcontent = "How many ___ are in ___?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
+  questions.textcontent = "What is a variable?";
+  firstChoice.textcontent = "a.) Non-code considerations to make before coding";
+  secondChoice.textcontent = "b.) JavaScript term for HTML elements";
+  thirdChoice.textcontent = "c.) A container for a piece of data";
+  fourthChoice.textcontent = "d.) A set of statements that performs a task or calculates a value";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
