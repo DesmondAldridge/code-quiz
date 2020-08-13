@@ -1,3 +1,17 @@
 #timer {
-    float: ;
+    margin-bottom: 4%;
+}
+
+#startDiv {
+    align-content: center;
+    margin-top: 4%;
+    margin-bottom: auto;
+    margin-right: 10%;
+}
+
+#quizDiv {
+    align-content: center;
+    margin-top: 4%;
+    margin-bottom: auto;
+    margin-right: 10%;
 }
