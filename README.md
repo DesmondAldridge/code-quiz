@@ -1,6 +1,10 @@
 
 ## JAVASCRIPT CODING QUIZ
 
+https://desmondaldridge.github.io/code-quiz/
+https://github.com/DesmondAldridge/code-quiz
+
+
 ## So my app was supposed to look like this...
 
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
