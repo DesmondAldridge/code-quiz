@@ -61,51 +61,48 @@ function beginQuiz() {
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Correct!'), contQuiz()});
+    thirdChoice.addEventListener('click', function(){alert('Correct!'), function contQuiz () {
+      //Second question...
+      questions.textcontent = "Which ___ are ___?";
+      firstChoice.textcontent = "a__";
+      secondChoice.textcontent = "b__";
+      thirdChoice.textcontent = "c__";
+      fourthChoice.textcontent = "d__";
+      //Make them choosable
+        firstChoice.addEventListener('click', function(){alert('Incorrect')});
+        secondChoice.addEventListener('click', function(){alert('Correct!'), addPt(), function contQuiz2 () {
+          //Second question...
+          questions.textcontent = "How is ___?";
+          firstChoice.textcontent = "a__";
+          secondChoice.textcontent = "b__";
+          thirdChoice.textcontent = "c__";
+          fourthChoice.textcontent = "d__";
+          //Make them choosable
+            firstChoice.addEventListener('click', function(){alert('Incorrect')});
+            secondChoice.addEventListener('click', function(){alert('Incorrect')});
+            thirdChoice.addEventListener('click', function(){alert('Incorrect')});
+            fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), function contQuiz3 () {
+              //Second question...
+              questions.textcontent = "____?";
+              firstChoice.textcontent = "a__";
+              secondChoice.textcontent = "b__";
+              thirdChoice.textcontent = "c__";
+              fourthChoice.textcontent = "d__";
+              //Make them choosable
+                firstChoice.addEventListener('click', function(){alert('Incorrect')});
+                secondChoice.addEventListener('click', function(){alert('Incorrect')});
+                thirdChoice.addEventListener('click', function(){alert('Incorrect')});
+                fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), toEndPage()});
+            }
+        thirdChoice.addEventListener('click', function(){alert('Incorrect')});
+        fourthChoice.addEventListener('click', function(){alert('Incorrect')});
+    }
     fourthChoice.addEventListener('click', function(){alert('Incorrect')});
 }
 
-function contQuiz () {
-  //Second question...
-  questions.textcontent = "Which ___ are ___?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
-  //Make them choosable
-    firstChoice.addEventListener('click', function(){alert('Incorrect')});
-    secondChoice.addEventListener('click', function(){alert('Correct!'), addPt(), contQuiz2()});
-    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
-    fourthChoice.addEventListener('click', function(){alert('Incorrect')});
-}
 
-function contQuiz2 () {
-  //Second question...
-  questions.textcontent = "How is ___?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
-  //Make them choosable
-    firstChoice.addEventListener('click', function(){alert('Incorrect')});
-    secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
-    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), contQuiz3()});
-}
 
-function contQuiz3 () {
-  //Second question...
-  questions.textcontent = "____?";
-  firstChoice.textcontent = "a__";
-  secondChoice.textcontent = "b__";
-  thirdChoice.textcontent = "c__";
-  fourthChoice.textcontent = "d__";
-  //Make them choosable
-    firstChoice.addEventListener('click', function(){alert('Incorrect')});
-    secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
-    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), toEndPage()});
-}
+
 
 
 // LAUNCHING THE QUIZ...
