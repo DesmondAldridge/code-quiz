@@ -55,7 +55,7 @@ function toEndPage() {
 function contQuiz3 () {
   //Second question...
   questions.textcontent = "What was the focus of this assignment?";
-  firstChoice.textcontent = "a.) No singular focus, this assignment stands as a general assessment test";
+  firstChoice.textcontent = "a.) No singular focus, this assignment stands as general assessment test";
   secondChoice.textcontent = "b.) jQuery and web APIs";
   thirdChoice.textcontent = "c.) JavaScript and jQuery";
   fourthChoice.textcontent = "d.) JavaScript and web APIs";
