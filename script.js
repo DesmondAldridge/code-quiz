@@ -52,32 +52,18 @@ function toEndPage() {
 
 // QUESTIONS
 
-function contQuiz3 () {
-  //Second question...
-  questions.textcontent = "What was the focus of this assignment?";
-  firstChoice.textcontent = "a.) No singular focus, this assignment stands as general assessment test";
-  secondChoice.textcontent = "b.) jQuery and web APIs";
-  thirdChoice.textcontent = "c.) JavaScript and jQuery";
-  fourthChoice.textcontent = "d.) JavaScript and web APIs";
+function beginQuiz() {
+  //First question...
+  questions.textcontent = "What is a variable?";
+  firstChoice.textcontent = "a.) Non-code considerations to make before coding";
+  secondChoice.textcontent = "b.) JavaScript term for HTML elements";
+  thirdChoice.textcontent = "c.) A container for a piece of data";
+  fourthChoice.textcontent = "d.) A set of statements that performs a task or calculates a value";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
-    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), toEndPage()});
-}
-
-function contQuiz2 () {
-  //Second question...
-  questions.textcontent = "What's the difference between localStorage and sessionStorage?";
-  firstChoice.textcontent = "a.) Where you generally store you laptop vs where you use it for coding sessions, doesn't apply to desktop computers";
-  secondChoice.textcontent = "b.) The former regards variables stores inside of a function, where as the latter regards being stored globally";
-  thirdChoice.textcontent = "c.) The former regards variable declaration, where as the latter regards variable initializing a variable";
-  fourthChoice.textcontent = "d.) Data in the former does not expire, where as data the latter will expire when the page session ends";
-  //Make them choosable
-    firstChoice.addEventListener('click', function(){alert('Incorrect')});
-    secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
-    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), contQuiz3()});
+    thirdChoice.addEventListener('click', function(){alert('Correct!'), contQuiz()});
+    fourthChoice.addEventListener('click', function(){alert('Incorrect')});
 }
 
 function contQuiz () {
@@ -94,18 +80,32 @@ function contQuiz () {
     fourthChoice.addEventListener('click', function(){alert('Incorrect')});
 }
 
-function beginQuiz() {
-  //First question...
-  questions.textcontent = "What is a variable?";
-  firstChoice.textcontent = "a.) Non-code considerations to make before coding";
-  secondChoice.textcontent = "b.) JavaScript term for HTML elements";
-  thirdChoice.textcontent = "c.) A container for a piece of data";
-  fourthChoice.textcontent = "d.) A set of statements that performs a task or calculates a value";
+function contQuiz2 () {
+  //Second question...
+  questions.textcontent = "What's the difference between localStorage and sessionStorage?";
+  firstChoice.textcontent = "a.) Where you generally store you laptop vs where you use it for coding sessions, doesn't apply to desktop computers";
+  secondChoice.textcontent = "b.) The former regards variables stores inside of a function, where as the latter regards being stored globally";
+  thirdChoice.textcontent = "c.) The former regards variable declaration, where as the latter regards variable initializing a variable";
+  fourthChoice.textcontent = "d.) Data in the former does not expire, where as data the latter will expire when the page session ends";
   //Make them choosable
     firstChoice.addEventListener('click', function(){alert('Incorrect')});
     secondChoice.addEventListener('click', function(){alert('Incorrect')});
-    thirdChoice.addEventListener('click', function(){alert('Correct!'), contQuiz()});
-    fourthChoice.addEventListener('click', function(){alert('Incorrect')});
+    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
+    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), contQuiz3()});
+}
+
+function contQuiz3 () {
+  //Second question...
+  questions.textcontent = "What was the focus of this assignment?";
+  firstChoice.textcontent = "a.) No singular focus, this assignment stands as general assessment test";
+  secondChoice.textcontent = "b.) jQuery and web APIs";
+  thirdChoice.textcontent = "c.) JavaScript and jQuery";
+  fourthChoice.textcontent = "d.) JavaScript and web APIs";
+  //Make them choosable
+    firstChoice.addEventListener('click', function(){alert('Incorrect')});
+    secondChoice.addEventListener('click', function(){alert('Incorrect')});
+    thirdChoice.addEventListener('click', function(){alert('Incorrect')});
+    fourthChoice.addEventListener('click', function(){alert('Correct!'), addPt(), toEndPage()});
 }
 
 // LAUNCHING THE QUIZ...
